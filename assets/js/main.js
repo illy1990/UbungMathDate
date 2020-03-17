@@ -55,3 +55,36 @@ RundungsArray.forEach((ZuRunden) => console.log(Math.ceil(ZuRunden)))
 
 
 // MATH - Ubung 6 - CodeFlow Übung lev2_2: Math.random() Math.floor() Game
+
+// let ComputerDenkt = Math.floor(Math.random() * 10 + 1);
+// let PeopleDenkt = prompt();
+
+// if (ComputerDenkt == PeopleDenkt) {
+//     console.log(ComputerDenkt + " " + PeopleDenkt + " yeah, richtig geraten")
+// } else {
+//     console.log(ComputerDenkt + " " + PeopleDenkt + " you flopped. Try again!")
+// }
+
+
+
+// MATH - Ubung 7 - CodeFlow Übung lev2_3: Math.min Math.max
+
+function minimalWerte() {
+    let dasAlterDerEltern = Math.min(52, 52);
+    let dasAlterDerGeschwister = Math.min(15, 20, 22, 30);
+    let dasAlterDerTrainer = Math.min(28, 32, 27);
+    let dasAlterDerFussballspieler = Math.min(38, 23, 45, 23, 23)
+
+    let youngsterOne = Math.min(dasAlterDerEltern, dasAlterDerGeschwister, dasAlterDerTrainer, dasAlterDerTrainer)
+    console.log(youngsterOne)
+}
+minimalWerte();
+
+
+// DATE - Ubung 1 - CodeFlow Übung lev1_1: date new Date()
+
+let date1 = new Date();
+
+document.getElementById("date1").innerHTML = date1;
+
+
