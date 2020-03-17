@@ -147,6 +147,33 @@ console.log(UhrenMinute)
 console.log(UhrenWochentagAnzeige)
 console.log(UhrenMonatsAnzeige)
 
+
 // DATE - Ubung 3 - CodeFlow Übung lev1_2: GET Date Methods
+
+var setDate1 = new Date();
+setDate1.setFullYear(2222, 09, 23);
+setDate1.setHours(13),
+    setDate1.setMinutes(25),
+    setDate1.setSeconds(11);
+
+document.getElementById("setDate1").innerHTML = setDate1;
+// document.getElementById("setDate2").innerHTML = setDate2;
+// document.getElementById("setDate3").innerHTML = setDate3;
+// document.getElementById("setDate4").innerHTML = setDate4;
+// document.getElementById("setDate5").innerHTML = setDate5;
+// document.getElementById("setDate6").innerHTML = setDate6;
+
+
+// DATE - Ubung 4 - CodeFlow Übung lev1_4: Tage In Monat
+
+function DaysInMonth(monat, Jahr) {
+    var DaysInMonth2 = new Date();
+    var Output = DaysInMonth2.getDay();
+
+    console.log(Output)
+}
+
+DaysInMonth(1, 2016);
+
 
 
