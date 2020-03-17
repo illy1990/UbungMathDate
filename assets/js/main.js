@@ -176,25 +176,36 @@ function DaysInMonth(monat, Jahr) {
 
 
     var Ausgabe = DaysInMonth2.getDate();
-    console.log("Der angebene Monate hat insgesamt " + Ausgabe + " Tage.")
-
-    // Test1---------------------------------------------------------:
-    // var DaysInMonth3 = new Date();
-    // DaysInMonth2.setFullYear(Jahr, monat, 1);
-    // DaysInMonth2.setHours(00);
-    // DaysInMonth2.setMinutes(00);
-    // DaysInMonth2.setSeconds(00)
-    // DaysInMonth2.setUTCMilliseconds(0)
-
-    // var GesamteMonate = DaysInMonth3.getTime() - DaysInMonth2.getTime();
-    // var GesamteTage = GesamteMonate / 1000 / 3600 / 60 / 60;
-
-    // console.log(GesamteTage)
-    // Test1---------------------------------------------------------:
-
+    console.log("Der angebene Monat " + monat + " und " + Jahr + " hat insgesamt " + Ausgabe + " Tage.")
 }
+DaysInMonth(1, 2000)
+DaysInMonth(2, 2000)
+DaysInMonth(3, 2000)
+DaysInMonth(4, 2000)
+DaysInMonth(5, 2000)
+DaysInMonth(6, 2000)
+DaysInMonth(7, 2000)
+DaysInMonth(8, 2000)
+DaysInMonth(9, 2000)
+DaysInMonth(10, 2000)
+DaysInMonth(11, 2000)
+DaysInMonth(12, 2000)
 
-DaysInMonth(1, 2016);
+
+// Test1---------------------------------------------------------:
+// var DaysInMonth3 = new Date();
+// DaysInMonth2.setFullYear(Jahr, monat, 1);
+// DaysInMonth2.setHours(00);
+// DaysInMonth2.setMinutes(00);
+// DaysInMonth2.setSeconds(00)
+// DaysInMonth2.setUTCMilliseconds(0)
+
+// var GesamteMonate = DaysInMonth3.getTime() - DaysInMonth2.getTime();
+// var GesamteTage = GesamteMonate / 1000 / 3600 / 60 / 60;
+
+// console.log(GesamteTage)
+// Test1---------------------------------------------------------:
+
 
 // DATE - Ubung 5 - CodeFlow Übung lev1_5: Monatsname
 
