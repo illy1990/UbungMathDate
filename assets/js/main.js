@@ -231,3 +231,36 @@ NameDesMonats(1410, 7, 15);
 
 // DATE - Ubung 6 - CodeFlow Übung lev1_6: AM PM
 
+function VorOderNachmittag(Jahr, Monat, Tag, Stunden) {
+    var UhrzeitsBestimmer = new Date();
+
+    UhrzeitsBestimmer.setFullYear(Jahr, Monat - 1, Tag);
+    UhrzeitsBestimmer.setHours(Stunden);
+    UhrzeitsBestimmer.setMinutes(00);
+    UhrzeitsBestimmer.setSeconds(00)
+    UhrzeitsBestimmer.setUTCMilliseconds(00)
+
+    var UhrzeitsAbschnittsBestimmer = UhrzeitsBestimmer.getHours();
+
+    if (UhrzeitsAbschnittsBestimmer < 12) {
+        console.log("Die eingebene Uhrzeit befindet sich AM")
+    } else {
+        console.log("Die eingebene Uhrzeit befindet sich PM")
+    }
+}
+
+VorOderNachmittag(1999, 10, 5, 15);
+
+// DATE - Ubung 7 - CodeFlow Übung lev1_6: AM PM
+
+function WochenendeArbeitstageTester() {
+
+
+    // return "Weekend"
+    // return "Arbeitstag"
+}
+
+WochenendeArbeitstageTester(15, 12, 2019);
+WochenendeArbeitstageTester(16, 2, 2001);
+WochenendeArbeitstageTester(1, 1, 2020);
+WochenendeArbeitstageTester(29, 02, 2020);
