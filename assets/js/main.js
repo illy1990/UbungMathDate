@@ -255,7 +255,7 @@ VorOderNachmittag(1999, 10, 5, 15);
 
 function WochenendeArbeitstageTester() {
 
-
+    // Siehe im schlauen Buch. Anass hat es gelöst, scheint nich schwer zu sein.
     // return "Weekend"
     // return "Arbeitstag"
 }
