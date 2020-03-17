@@ -168,12 +168,66 @@ document.getElementById("setDate1").innerHTML = setDate1;
 
 function DaysInMonth(monat, Jahr) {
     var DaysInMonth2 = new Date();
-    var Output = DaysInMonth2.getDay();
+    DaysInMonth2.setFullYear(Jahr, monat, 0);
+    DaysInMonth2.setHours(00);
+    DaysInMonth2.setMinutes(00);
+    DaysInMonth2.setSeconds(00)
+    DaysInMonth2.setUTCMilliseconds(0)
 
-    console.log(Output)
+
+    var Ausgabe = DaysInMonth2.getDate();
+    console.log("Der angebene Monate hat insgesamt " + Ausgabe + " Tage.")
+
+    // Test1---------------------------------------------------------:
+    // var DaysInMonth3 = new Date();
+    // DaysInMonth2.setFullYear(Jahr, monat, 1);
+    // DaysInMonth2.setHours(00);
+    // DaysInMonth2.setMinutes(00);
+    // DaysInMonth2.setSeconds(00)
+    // DaysInMonth2.setUTCMilliseconds(0)
+
+    // var GesamteMonate = DaysInMonth3.getTime() - DaysInMonth2.getTime();
+    // var GesamteTage = GesamteMonate / 1000 / 3600 / 60 / 60;
+
+    // console.log(GesamteTage)
+    // Test1---------------------------------------------------------:
+
 }
 
 DaysInMonth(1, 2016);
 
+// DATE - Ubung 5 - CodeFlow Übung lev1_5: Monatsname
 
+var MonatsListe = [
+    "Januar",
+    "Februar",
+    "März",
+    "April",
+    "Mai",
+    "Juni",
+    "Juli",
+    "August",
+    "September",
+    "Oktober",
+    "November",
+    "Dezember"
+];
+
+function NameDesMonats(Jahr, Monat, Tag) {
+    var MonatsName = new Date();
+    MonatsName.setFullYear(Jahr, Monat - 1, Tag);
+    MonatsName.setHours(00);
+    MonatsName.setMinutes(00);
+    MonatsName.setSeconds(00)
+    MonatsName.setUTCMilliseconds(00)
+
+    var welcherMonat = MonatsListe[MonatsName.getMonth()];
+    console.log("Der Name des eingegeben Monats ist: " + welcherMonat)
+}
+
+NameDesMonats(2016, 3, 4);
+NameDesMonats(2019, 12, 24);
+NameDesMonats(1410, 7, 15);
+
+// DATE - Ubung 6 - CodeFlow Übung lev1_6: AM PM
 
