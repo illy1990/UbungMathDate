@@ -84,7 +84,69 @@ minimalWerte();
 // DATE - Ubung 1 - CodeFlow Übung lev1_1: date new Date()
 
 let date1 = new Date();
+let date2 = new Date(1975, 9, 10, 15, 23, 43);
+let date3 = new Date(1982, 1, 2, 10, 0, 0);
+let date4 = new Date(1995, 2, 27, 0, 0, 0);
 
 document.getElementById("date1").innerHTML = date1;
+document.getElementById("date2").innerHTML = date2;
+document.getElementById("date3").innerHTML = date3;
+document.getElementById("date4").innerHTML = date4;
+
+let date1Round2 = new Date("September 2, 2019 09:00:00")
+let date2Round2 = new Date(0)
+let date3Round2 = new Date(31556908800)
+let date4Round2 = new Date(86400000)
+
+document.getElementById("date1Round2").innerHTML = date1Round2;
+document.getElementById("date2Round2").innerHTML = date2Round2;
+document.getElementById("date3Round2").innerHTML = date3Round2;
+document.getElementById("date4Round2").innerHTML = date4Round2;
+
+// DATE - Ubung 2 - CodeFlow Übung lev1_2: GET Date Methods
+
+let aktuelleUhrzeit = new Date();
+var UhrenmonateVorgegeben = [
+    "Januar",
+    "Februar",
+    "März",
+    "April",
+    "Mai",
+    "Juni",
+    "Juli",
+    "August",
+    "September",
+    "Oktober",
+    "November",
+    "Dezember"
+];
+
+var UhrenwochenTagVorgegeben = [
+    "Sonntag",
+    "Montag",
+    "Dienstag",
+    "Mittwoch",
+    "Donnerstag",
+    "Freitag",
+    "Samstag"
+];
+
+let UhrenJahr = aktuelleUhrzeit.getFullYear();
+let UhrenMonat = aktuelleUhrzeit.getMonth();
+let UhrenTag = aktuelleUhrzeit.getDay();
+let UhrenStunde = aktuelleUhrzeit.getHours();
+let UhrenMinute = aktuelleUhrzeit.getMinutes();
+let UhrenWochentagAnzeige = UhrenwochenTagVorgegeben[UhrenTag];
+let UhrenMonatsAnzeige = UhrenmonateVorgegeben[UhrenMonat];
+
+console.log(UhrenJahr)
+console.log(UhrenMonat)
+console.log(UhrenTag)
+console.log(UhrenStunde)
+console.log(UhrenMinute)
+console.log(UhrenWochentagAnzeige)
+console.log(UhrenMonatsAnzeige)
+
+// DATE - Ubung 3 - CodeFlow Übung lev1_2: GET Date Methods
 
 
